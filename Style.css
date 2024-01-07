@@ -1,5 +1,217 @@
+:root {
+    --padding: 3vw;
+    --ContentRadius: 15px;
+    --QuickViewHeight: 45vw;
+    --MapHeight: 60.66666666vw;
+    --RightContentHeight: calc(var(--QuickViewHeight) + var(--padding) + var(--RightContentHeight));
+    
+    --ContentBackground-color: #0D0D0D;
+    --ContentBackground-transparency: 0.85;
+  }
 
-#map {
-    height: 5in;
+body {
+    background-color: #262626;
+  }
+.Header {
+    position: sticky;
+    top: 0px;
     width: 100%;
+    height: 8vh;
+    z-index: 100;
+    background-color: var(--ContentBackground-color);
+    opacity: var(--ContentBackground-transparency);
+
+  }
+
+.SIUELogo {
+    height: 6vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 3vw;
+    opacity: 1;
+    width: auto;
+    float:left;
+  }
+
+.Connected {
+    height: 4vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-right: 3vw;
+    padding-left: 1.75vh;
+    border-radius: 15vw;
+    background-color: black;
+    float: right;
 }
+
+.ConnectedDot {
+    height: 1.25vh;
+    width: 1.25vh;
+    margin-left: 1.5vh;
+    margin-right: 1.5vh;
+    background-color: #33CC45;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.ConnectedText {
+    height: 4vh;
+    line-height: 4vh;
+    font-size: 2vh;
+    font-family: Arial;
+    color: white;
+}
+
+.NotConnected {
+    height: 4vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-right: 3vw;
+    padding-left: 1.75vh;
+    border-radius: 15vw;
+    background-color: #e5182d;
+    float: right;
+}
+
+.NotConnectedDot {
+    height: 1.25vh;
+    width: 1.25vh;
+    margin-left: 1.5vh;
+    margin-right: 1.5vh;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.NotConnectedText {
+    height: 4vh;
+    line-height: 4vh;
+    font-size: 2vh;
+    font-family: Arial;
+    color: white;
+}
+
+.ContentVoid {
+    height: 3vw;
+}
+
+.Content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 94%; /* Changes the side padding for content*/
+}
+
+.LeftVoid {
+    width: 32%;
+    height: 108.66666666vw; /* QuickView height + ContentSpacer height + Map height */
+    float:left;
+}
+
+.ImgSpacer {
+    height: 15vw;
+}
+
+.SolarCarImg {
+    width: 90%;
+}
+.RoadImg {
+    width: 45%;
+    position: absolute;
+    left:28vw;
+    top: 0px;
+}
+
+.RightContent {
+    width: 64%;
+    height: 108.66666666vw; /* Same as LeftVoid hight */
+    float:right;
+}
+
+.QuickView {
+    width: 100%;
+    height: var(--QuickViewHeight);
+    border-radius: var(--ContentRadius);
+    background-color: var(--ContentBackground-color);
+    opacity: var(--ContentBackground-transparency);
+}
+
+.QuickviewSpeed {
+    width: 100%;
+    height: 24vw;
+    padding-left: 3vw;
+}
+
+.QuickviewCurrentSpeed {
+    height: 16vw;
+    line-height: 25vw;
+    font-size: 25vw;
+    font-family: Arial;
+    color: white;
+}
+
+.QuickviewCurrentSpeedMPH {
+    padding-left: 1vw;
+    height: 4vw;
+    line-height: 4vw;
+    font-size: 4.5vw;
+    font-family: Arial;
+    color: white;
+    opacity: 0.4;
+}
+
+.QuickviewLine {
+    width: 90%;
+    height: 0.5vw;
+    background-color: white;
+    opacity: 0.4;
+    margin-left: 5%;
+}
+
+.ContentSpacer {
+    height: var(--padding);
+}
+
+.Map {
+    width: 100%;
+    height: var(--MapHeight);
+    border-radius: var(--ContentRadius);
+    background-color: var(--ContentBackground-color);
+    opacity: var(--ContentBackground-transparency);
+}
+
+.CenterContent {
+    width: 100%;
+    height: 100vh; /*temp untill content made*/
+    overflow: auto;
+    clear:both"
+}
+
+.Sponsor {
+    width: 100%;
+    height: 20vw;
+    border-radius: var(--ContentRadius);
+    background-color: var(--ContentBackground-color);
+    opacity: var(--ContentBackground-transparency);
+}
+
+.Ender {
+    width: 100%;
+    height: 10vh;
+    bottom: 0px;
+    background-color: var(--ContentBackground-color);
+    opacity: var(--ContentBackground-transparency);
+}
+
+.SIUELogoLong {
+    display: block;
+    padding-top: 1.525vh;
+    width: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+  }
